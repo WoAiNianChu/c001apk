@@ -5,17 +5,13 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven ("https://jitpack.io")
-        maven("https://oss.sonatype.org/content/repositories/public")
-        gradlePluginPortal()
+        maven { setUrl("https://jitpack.io") }
+        maven { setUrl("https://oss.sonatype.org/content/repositories/public/") }
     }
 }
-
-rootProject.name = "c001apk"
-include(":app", ":mojito", ":SketchImageViewLoader", ":GlideImageLoader")
- 

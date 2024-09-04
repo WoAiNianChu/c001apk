@@ -90,11 +90,11 @@ interface ApiService {
         @Query("lastItem") lastItem: String?
     ): Call<HomeFeedResponse>
 
-    @GET("/v6/apk/detail")
-    fun getAppInfo(
-        @Query("id") id: String,
-        @Query("installed") installed: Int = 1,
-    ): Call<FeedContentResponse>
+//    @GET("/v6/apk/detail")
+//    fun getAppInfo(
+//        @Query("id") id: String,
+//        @Query("installed") installed: Int = 1,
+//    ): Call<FeedContentResponse>
 
     @POST("/v6/apk/download?extra=")
     fun getAppDownloadLink(

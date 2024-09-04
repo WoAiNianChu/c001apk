@@ -13,11 +13,11 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
-        maven { url 'https://oss.sonatype.org/content/repositories/public/' }
+        maven { setUrl("https://jitpack.io") }
+        maven { setUrl("https://oss.sonatype.org/content/repositories/public/") }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath("com.android.tools.build:gradle:7.0.4")
         // Add your other dependencies here
     }
 }
@@ -26,7 +26,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
-        maven { url 'https://oss.sonatype.org/content/repositories/public/' }
+        maven { setUrl("https://jitpack.io") }
+        maven { setUrl("https://oss.sonatype.org/content/repositories/public/") }
     }
 }
